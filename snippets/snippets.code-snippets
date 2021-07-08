@@ -1,0 +1,42 @@
+{
+    "Simple Table": {
+        "prefix": ["wtable"],
+        "body": [
+                "table ${4:id} ${1:MyTable}",
+                "{",
+                    "\tDataClassification = CustomerContent;",
+                    
+                    "\tfields",
+                    "\t{",
+                        "\t\tfield(1; ${2:KeyField}; ${3:Type})",
+                        "\t\t{",
+                            "\t\t\tDataClassification = CustomerContent;",
+                        "\t\t}",
+                        "\t\tfield(1; FieldName; Type)",
+                        "\t\t{",
+                            "\t\t\tDataClassification = CustomerContent;",
+                        "\t\t}",
+                        "\t\tfield(1; FieldName; Type)",
+                        "\t\t{",
+                            "\t\t\tDataClassification = CustomerContent;",
+                        "\t\t}",
+                    "\t}",
+                    "\t",
+                    "\tkeys",
+                    "\t{",
+                        "\t\tkey(PK; ${2:KeyField})",
+                        "\t\t{",
+                            "\t\t\tClustered = true;",
+                        "\t\t}",
+                    "\t}",
+                "}",
+        ],
+        "description": "A for loop."
+    },
+    "For Loop": {
+        "prefix": ["asdf", "asdf-loop"],
+        "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+        "description": "A for loop."
+    },
+}
+   
