@@ -1,6 +1,7 @@
 {
     "Master Table with No. Series": {
         "prefix": "wtable-master",
+        "scope": "al",
         "body": [
             "table ${1:id} ${2:MyTable}",
             "{",
@@ -119,6 +120,6 @@
             "\t#endregion events",
             "}"
         ],
-        "description": "Snippet: Table"
+        "description": "Snippet: Master Table + NoSeries"
     }
 }

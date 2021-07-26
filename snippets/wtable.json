@@ -1,6 +1,7 @@
 {
     "Simple Table": {
         "prefix": ["wtable"],
+        "scope": "al",
         "body": [
                 "table ${4:id} ${1:MyTable}",
                 "{",
@@ -31,6 +32,6 @@
                     "\t}",
                 "}"
         ],
-        "description": "A for loop."
+        "description": "Snippet: Minimal Table"
     }
 }
