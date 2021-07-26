@@ -13,7 +13,11 @@
         "snippets": [
             {
                 "language": "al",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/wtable.json"
+            },
+            {
+                "language": "al",
+                "path": "./snippets/wtable-master.json"
             }
         ]
     }
