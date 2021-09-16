@@ -1,0 +1,47 @@
+{
+    "Test-Codeunit": {
+        "prefix": "wcodeunit-test",
+        "scope": "al",
+        "body": [
+            "codeunit ${1:id} ${2:MyCodeunit}",
+            "{",
+                "\tSubtype = Test;",
+                "\tvar",
+                "\t\tAssert: Codeunit Assert;",
+                "\t\tIsInitialized: Boolean;",
+                "",
+                "\tlocal procedure Initialize()",
+                "\tvar",
+                "\t\tTestInitializer: Codeunit \"${3:Test Initializer}\";",
+                "\tbegin",
+                "\t\tif IsInitialized then",
+                "\t\t\texit;",
+                "",
+                "\t\t// Run initializer",
+                "\t\tTestInitializer.InitializeForTesting();",
+                "",
+                "\t\tIsInitialized := true;",
+                "\tend;",
+            "}"
+        ]
+    },
+
+    "Testcase": {
+        "prefix": "wtestcase",
+        "scope": "al",
+        "body": [
+            "#region T${1:Number}_${2:TestName}",
+            "[Test]",
+            "procedure T${1:Number}_${2:TestName}",
+            "var",
+            "", 
+            "begin",
+                "\tInitialize();",
+                "\t// [GIVEN] ",
+                "\t// [WHEN] ",
+                "\t// [THEN] ",
+            "end;",
+            "#endregion"
+        ]
+    }
+}
