@@ -1,6 +1,8 @@
 {
     "name": "wisa-snippets",
+    "publisher": "JNaderer",
     "displayName": "Wisa Snippets",
+    "repository": {"url": "https://github.com/wisa1/wisa-snippets"},
     "description": "",
     "version": "0.0.1",
     "engines": {
